@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Library</h1> <br>
+            <button command="show-modal" commandfor="my-dialog" id="bookbtn">Add book</button>
+        </div>
+        <div class="content">
+            <dialog id="my-dialog">
+            <div class="addbook">
+                <form id="bookform">
+                    <div class="indivs">
+                    <label for="name">Name:</label> <br>
+                    <input type="text" id="name" name="name"> <br>
+                    </div>
+                    <div class="indivs">
+                    <label for="author">Author:</label> <br>
+                    <input type="text" id="author" name="author">
+                    </div>
+                    <div class="indivs">
+                    <label for="pages">Pages:</label> <br>
+                    <input type="number" id="pages" name="pages">
+                    </div>
+                    <div class="indivs">
+                        <!-- <button id="submit" type="submit">Submit</button> -->
+                        <input type="submit" value="submit">
+                    </div>
+                    </form>
+                    <button commandfor="my-dialog" command="close">Close</button>
+            </div>
+            </dialog>
+            <div id="display">
+
+            </div>
+        </div>
+        <div class="footer">
+            <p>Created by Muzammil</p>
+        </div>
+    </div>
+    <script src="javascript.js" defer></script>
+</body>
+</html>
